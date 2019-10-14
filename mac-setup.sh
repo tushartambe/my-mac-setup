@@ -1,6 +1,7 @@
 #first install chrome and download iterm2 then follow these steps
+
 # Clone the .zshrc and .vimrc files here 
-        git clone https://github.com/tushartambe/dotfiles.git
+git clone https://github.com/tushartambe/dotfiles.git
 
 #homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -10,10 +11,13 @@ brew install zsh
 
 #install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.zshrc ~/.zshrc
 #set zsh default shell
 chsh -s /bin/zsh
 
-#launch zsh afetr above steps
+exec zsh  #launch zsh afetr above steps
 
 #--------------------
 
@@ -21,7 +25,7 @@ chsh -s /bin/zsh
 brew install zsh-autosuggestions
 #you can do this mannually by putting this line into ~/.zshrc
 # 'source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh'
-echo "source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc 
+ echo "source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc 
         #no need if you cloned .zshrc and .vimrc
 
 #Start a new terminal session.
@@ -32,7 +36,7 @@ echo "source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/
 brew install zsh-syntax-highlighting
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
         #no need if you cloned .zshrc and .vimrc
 
 #start new terminal session
@@ -98,18 +102,7 @@ npm install -g chalk
 #--------------------
 
 #VSCODE EXTENSIONS
-    #advanced-new-file
-    #Angular 2 TypeScript emmet
-    #Auto rename tag
-    #Better TOML
-    #Bracket pair colorizer
-    #change-case
-    #Docker
-    #mocha test explorer
-    #Org mode
-    #Prettier Code formatter
-    #Test explorer UI
-    #vscode-icons
+   #install Setting sync and login using github and take a pull
 
 #--------------------
 
@@ -127,5 +120,6 @@ npm install -g chalk
    #docker
    #intellij
    #Android studio
+   #flycut
 
 #--------------------
