@@ -1,7 +1,7 @@
 #first install chrome and download iterm2 then follow these steps
 
 # Clone the .zshrc and .vimrc files here 
-git clone https://github.com/tushartambe/dotfiles.git
+git clone https://github.com/tushartambe/dotfiles.git ~/dotfiles
 
 #homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -17,9 +17,26 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 #set zsh default shell
 chsh -s /bin/zsh
 
-exec zsh  #launch zsh afetr above steps
+exec zsh  #launch zsh afer above steps
 
 #--------------------
+
+# Here need to extract into other file as ZSH LAUNCHED
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #zsh auto Suggestions
 brew install zsh-autosuggestions
@@ -71,18 +88,45 @@ git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/terryma/vim-multiple-cursors.git
 git clone https://github.com/prettier/vim-prettier
 
+
+
+
+
+
+
+# Here need to extract into other file
+
+
+
+
+
+
+#fonts
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+#########
+
+
+
+
+
+
+
 #--------------------
 #zsh tools
 brew install tree
 brew install ack
 brew install tig
-brew install bat
 brew install autojump
-
+brew install mysql
+brew install yarn
+brew install watch
+brew install bat
+brew install nvm
 #--------------------
 
 #install node 
-brew install node
+ brew install node
 
 #--------------------
 #installing heroku 
@@ -98,6 +142,7 @@ npm install -g readline-sync
 npm install -g mocha
 npm install -g prettier
 npm install -g chalk
+npm install -g  lite-server
 
 #--------------------
 
