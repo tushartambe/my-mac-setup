@@ -61,6 +61,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 #--------------------
 #install powerlevel9K theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 #in .zshrc
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -123,6 +124,10 @@ brew install yarn
 brew install watch
 brew install bat
 brew install nvm
+brew install tldr
+brew install tmux
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 #--------------------
 
 #install node 
